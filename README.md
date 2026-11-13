@@ -9,8 +9,8 @@ downloads on [camocoin.org](https://camocoin.org) were built from the public cod
 
 ```
 gitian-pubkeys/<builder>.asc                     builders' public signing keys
-v1.0.0-linux/<builder>/camo-linux-1.0-build.assert       hashes this builder got
-v1.0.0-linux/<builder>/camo-linux-1.0-build.assert.sig   their signature over it
+v1.0.0-linux/<builder>/camo-linux-0.18-build.assert       hashes this builder got
+v1.0.0-linux/<builder>/camo-linux-0.18-build.assert.sig   their signature over it
 v1.0.0-win/...   v1.0.0-osx/...                   same for Windows and macOS
 ```
 
@@ -30,7 +30,7 @@ on camocoin.org and in the camo repository (`contrib/gitian/gitian-pubkeys/camo-
 
 ```bash
 gpg --import gitian-pubkeys/*.asc
-gpg --verify v1.0.0-linux/thedifference7717-sys/camo-linux-1.0-build.assert.sig
+gpg --verify v1.0.0-linux/thedifference7717-sys/camo-linux-0.18-build.assert.sig
 ```
 
 Then compare the SHA-256 lines in the `.assert` files of different builders: they must be identical, and must
